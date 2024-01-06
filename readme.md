@@ -42,7 +42,15 @@ services:
             context: .
             dockerfile: Dockerfile
         ports: - "3000:3000"
-        volumes: - .:/usr/src/app
+        environment:
+            - DB_HOST=
+            - DB_USER=
+            - DB_PASS=
+            - DB_NAME=
+            - DB_PORT=
+            - JWT_KEY=
+            - NODE_ENV=
+            - PORT=
 ```
 
 

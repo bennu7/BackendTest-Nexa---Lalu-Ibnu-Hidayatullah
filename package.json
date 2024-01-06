@@ -9,7 +9,7 @@
     "build": "tsc && ts-node updateConfig.ts",
     "start:prod": "node dist/server.js",
     "docker:build-n-run": "docker build -t express-ts-nexa . && docker run -p 3000:3000 express-ts-nexa",
-    "dcompose:up": "docker-compose up -d",
+    "dcompose:up": "docker-compose up",
     "dcompose:down": "docker-compose down"
   },
   "keywords": [],

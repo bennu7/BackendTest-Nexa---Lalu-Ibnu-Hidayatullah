@@ -14,5 +14,3 @@ services:
     #   - DB_PORT=3306
     #   - JWT_KEY=nexatest
     #   - NODE_ENV=DEVELOPMENT
-    volumes:
-      - .:/usr/src/app
