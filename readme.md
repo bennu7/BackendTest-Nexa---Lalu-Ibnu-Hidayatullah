@@ -34,6 +34,7 @@ CMD ["npm", "run", "start:prod"]
 ```
 
 ### docker-compose.yml
+<i>fill environment value same as <b>.env</b> file</i>
 ```
 version: "3.7"
 services:
