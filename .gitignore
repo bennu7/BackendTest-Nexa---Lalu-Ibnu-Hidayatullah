@@ -1,0 +1,6 @@
+backups/
+node_modules/
+dist/
+.env
+sql/test.sql
+images/karyawan

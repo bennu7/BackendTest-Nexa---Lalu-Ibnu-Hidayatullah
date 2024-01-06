@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=host.docker.internal
+    #   - DB_USER=ibnu
+    #   - DB_PASS=Flypower100%
+    #   - DB_NAME=testing_nexa
+    #   - DB_PORT=3306
+    #   - JWT_KEY=nexatest
+    #   - NODE_ENV=DEVELOPMENT
+    volumes:
+      - .:/usr/src/app

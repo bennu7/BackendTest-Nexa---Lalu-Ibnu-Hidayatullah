@@ -1,0 +1,43 @@
+{
+  "name": "nexa",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "scripts": {
+    "start": "tsc && ts-node updateConfig.ts && node dist/server.js",
+    "dev": "nodemon - exec 'ts-node' src/server.ts",
+    "build": "tsc && ts-node updateConfig.ts",
+    "start:prod": "node dist/server.js",
+    "docker:build-n-run": "docker build -t express-ts-nexa . && docker run -p 3000:3000 express-ts-nexa",
+    "dcompose:up": "docker-compose up -d",
+    "dcompose:down": "docker-compose down"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "bcrypt": "^5.1.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "http-status": "^1.7.3",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "1.4.5-lts.1",
+    "mysql2": "^3.6.5",
+    "typeorm": "^0.3.19"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/morgan": "^1.9.9",
+    "@types/multer": "^1.4.11",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
+  }
+}
